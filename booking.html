@@ -17,7 +17,7 @@
       scroll-behavior: smooth;
     }
   </style>
-      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -53,6 +53,8 @@
         <a href="booking.html" class="text-pink-600 font-bold">Susisiekime</a>
         <a href="paslaugos.html" class="hover:text-pink-600">Paslaugos</a>
       </div>
+    </div>
+
   </header>
 
   <main class="pt-24 px-4">
@@ -113,20 +115,20 @@
     <p>© 2025 AmberLux | Visos teisės saugomos</p>
   </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            AOS.init({ duration: 1000, once: true });
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({ duration: 1000, once: true });
 
-            const toggleButton = document.getElementById("menu-toggle");
-            const mobileMenu = document.getElementById("mobile-menu");
+      const toggleButton = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-            if (toggleButton && mobileMenu) {
-                toggleButton.addEventListener("click", () => {
-                    mobileMenu.classList.toggle("hidden");
-                });
-            }
+      if (toggleButton && mobileMenu) {
+        toggleButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
         });
-    </script>
+      }
+    });
+  </script>
 
   <script>
     AOS.init({ duration: 1000, once: true });
