@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krikštynos - AmberLux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    img.lazyload {
+      filter: blur(8px);
+      transition: filter 0.5s ease-out;
+    }
+
+    img:not(.lazyload) {
+      filter: blur(0);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html">
+        <img src="assets/img/Logotipas_AmberLux1.png" alt="AmberLux logo" class="h-14">
+      </a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-pink-600">Pradžia</a>
+        <a href="gallery.html" class="text-pink-600 font-bold">Galerija</a>
+        <a href="about.html" class="hover:text-pink-600">Apie mane</a>
+        <a href="booking.html" class="hover:text-pink-600">Susisiekime</a>
+        <a href="paslaugos.html" class="hover:text-pink-600">Paslaugos</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-pink-600 text-3xl">&#9776;</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <div class="flex flex-col items-center py-4 space-y-4">
+        <a href="index.html" class="hover:text-pink-600">Pradžia</a>
+        <a href="gallery.html" class="text-pink-600 font-bold">Galerija</a>
+        <a href="about.html" class="hover:text-pink-600">Apie mane</a>
+        <a href="booking.html" class="hover:text-pink-600">Susisiekime</a>
+        <a href="paslaugos.html" class="hover:text-pink-600">Paslaugos</a>
+      </div>
+  </header>
+
+  <main class="pt-24 px-4">
+    <h1 class="text-4xl font-bold text-center mb-10">Krikštynos</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <!-- nuotrauka 1 -->
+      <a href="assets/img/krikštynos/20250614-DSC_0373.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/20250614-DSC_0373.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 2 -->
+      <a href="assets/img/krikštynos/DSC_0479.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_0479.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 3 -->
+      <a href="assets/img/krikštynos/DSC_6287.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_6287.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 4 -->
+      <a href="assets/img/krikštynos/DSC_6290.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_6290.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 5 -->
+      <a href="assets/img/krikštynos/DSC_7320-1.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_7320-1.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 6 -->
+      <a href="assets/img/krikštynos/DSC_7379.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_7379.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 7 -->
+      <a href="assets/img/krikštynos/DSC_8280.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_8280.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 8 -->
+      <a href="assets/img/krikštynos/DSC_8627.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_8627.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 9 -->
+      <a href="assets/img/krikštynos/DSC_8763.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_8763.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 10 -->
+      <a href="assets/img/krikštynos/DSC_8777.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_8777.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+      <!-- nuotrauka 11 -->
+      <a href="assets/img/krikštynos/DSC_9458.jpg" class="glightbox" data-gallery="wedding">
+        <img data-src="assets/img/krikštynos/DSC_9458.jpg"
+          class="lazyload rounded shadow-lg w-full h-80 object-cover hover:scale-105 transition">
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-6 text-center mt-10">
+    <p>© 2025 AmberLux | Visos teisės saugomos</p>
+  </footer>
+
+  <script> AOS.init({ duration: 1000, once: true }); </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true
+    });
+  </script>
+<!-- Lazy loading skriptas -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazyImages = document.querySelectorAll('img.lazyload');
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove("lazyload");
+            observer.unobserve(img);
+          }
+        });
+      });
+      lazyImages.forEach(img => observer.observe(img));
+    });
+  </script>
+<!-- Atgal mygtukas -->
+  <div class="text-center mb-10">
+    <a href="gallery.html" id="back-button"
+      class="hidden fixed bottom-6 right-6 bg-pink-500 text-white px-4 py-2 rounded-lg shadow-lg transition-opacity duration-500 z-50 hover:bg-pink-600">
+      ← Atgal į galeriją
+    </a>
+  </div>
+<!-- galerijos peržiūros skriptas -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backButton = document.getElementById("back-button");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backButton.classList.remove("hidden");
+          backButton.classList.add("opacity-100");
+        } else {
+          backButton.classList.add("hidden");
+          backButton.classList.remove("opacity-100");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

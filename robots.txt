@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amberlux.lt/sitemap.xml

@@ -1,0 +1,103 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apie mane - AmberLux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html">
+        <img src="assets/img/Logotipas_AmberLux1.png" alt="AmberLux logo" class="h-14">
+      </a>
+
+      <!-- Desktop menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-pink-600">Pradžia</a>
+        <a href="gallery.html" class="hover:text-pink-600">Galerija</a>
+        <a href="about.html" class="text-pink-600 font-bold">Apie mane</a>
+        <a href="booking.html" class="hover:text-pink-600">Susisiekime</a>
+        <a href="paslaugos.html" class="hover:text-pink-600">Paslaugos</a>
+
+      </nav>
+
+      <!-- Burger button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-pink-600 text-3xl">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <div class="flex flex-col items-center py-4 space-y-4">
+        <a href="index.html" class="hover:text-pink-600">Pradžia</a>
+        <a href="gallery.html" class="hover:text-pink-600">Galerija</a>
+        <a href="about.html" class="text-pink-600 font-bold">Apie mane</a>
+        <a href="booking.html" class="hover:text-pink-600">Susisiekime</a>
+        <a href="paslaugos.html" class="hover:text-pink-600">Paslaugos</a>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 px-4">
+    <h1 class="text-4xl font-bold text-center mb-10">Apie mane</h1>
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+      <img src="assets/img/about-me.jpg" alt="Gintarė"
+        class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-10" data-aos="fade-right">
+      <div data-aos="fade-left">
+        <p class="mb-4 text-lg"><strong>Esu Gintarė – fotografija mano aistra ir kelias, kuriuo žengiu jau trejus
+            metus.</strong> Ši
+          kelionė prasidėjo nuo Nikon D300s fotoaparato ir paprastų, bet svarbių gyvenimo akimirkų fiksavimo. Šiandien
+          jau dirbu su profesionaliu Nikon Z6 II, o mano meilė šiai sričiai tik stiprėja.<br>
+
+          Fotografuoju įvairias šventes – nuo jaukių gimtadienių ir šeimos susibūrimų iki vestuvių bei asmeninių
+          fotosesijų. Taip pat kuriu savitus fotografijos projektus, kuriuose ieškau šviesos, emocijų ir autentiškumo.
+          Dalį šių kūrinių galėsite išvysti galerijoje.<br>
+
+          Esu mokinė žinomo fotografo <strong>Algimanto Barzdžiaus</strong>, kurio patirtis ir mokymai man padeda augti
+          bei gilinti
+          meistrystę. Nors dar tik žengiu į profesionalų gretas, kiekvieną kadrą stengiuosi paversti ne tik gražia
+          nuotrauka, bet ir jaukia istorija, į kurią norisi sugrįžti.</p>
+        <p class="mb-4 text-lg">Vestuvės, krikštynos, šeimos šventės - kiekvienas šis momentas unikalus. Mano tikslas -
+          sukurti prisiminimus, į kuriuos norėsite sugrįžti vėl ir vėl.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-6 text-center mt-10">
+    <p>© 2025 AmberLux | Visos teisės saugomos</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({ duration: 1000, once: true });
+
+      const toggleButton = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (toggleButton && mobileMenu) {
+        toggleButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
